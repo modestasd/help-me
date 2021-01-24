@@ -15,11 +15,13 @@
       ],
       "skipLibCheck": true,
       "resolveJsonModule": true,
+      "moduleResolution": "Node",
       "baseUrl": "./",
       "paths": {
         "src*": ["src*"]
       }
     },
+    "include": ["src/**/*.ts", "tests/**/*.ts"],
     "exclude": [
       "node_modules"
     ]
