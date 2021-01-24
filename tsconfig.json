@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "jsx": "react",
+      "lib": [
+        "es2017",
+        "es2019",
+        "dom"
+      ],
+      "skipLibCheck": true,
+      "resolveJsonModule": true,
+      "baseUrl": "./",
+      "paths": {
+        "src*": ["src*"]
+      }
+    },
+    "exclude": [
+      "node_modules"
+    ]
+}
+  

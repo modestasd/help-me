@@ -1,0 +1,9 @@
+{
+  "header": {
+    "home_route": "home",
+    "about_route": "about"
+  },
+  "welcome": {
+    "welcome_text": "Welcome"
+  }
+}

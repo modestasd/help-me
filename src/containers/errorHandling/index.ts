@@ -1,0 +1,1 @@
+export {default as ErrorBoundariesContainer} from './ErrorBoundaries';
