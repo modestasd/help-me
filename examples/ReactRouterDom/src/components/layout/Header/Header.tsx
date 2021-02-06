@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { ROUTES } from 'src/routes/constants';
+import ROUTES from 'src/routes/constants';
 import { useNavigation } from 'src/routes/utils';
 
 import './styles.css';
