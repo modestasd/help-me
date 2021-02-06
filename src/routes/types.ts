@@ -12,5 +12,6 @@ export const ROUTES = {
     REDUXSAGA: '/redux-saga',
     EREORHANDLING: '/error-handling',
     TESTING: '/testing',
+    STYLING: '/styling',
     ABOUTME: '/about'
 };

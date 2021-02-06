@@ -1,13 +1,13 @@
 import React, { Suspense, lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { ROUTES } from 'src/routes/types';
+import { ROUTES } from './types';
 
-const WelcomePage = lazy(() => import('src/pages/Welcome'));
-const HomePage = lazy(() => import('src/pages/Home'));
-const AboutPage = lazy(() => import('src/pages/About'));
-const OptimizationPage = lazy(() => import('src/pages/Optimization'));
-const ErrorHandlingPage = lazy(() => import('src/pages/ErrorHandling'));
-const LocalizationPage = lazy(() => import('src/pages/Localization'));
+const WelcomePage = lazy(() => import('../pages/Welcome'));
+const HomePage = lazy(() => import('../pages/Home'));
+const AboutPage = lazy(() => import('../pages/About'));
+const OptimizationPage = lazy(() => import('../pages/Optimization'));
+const ErrorHandlingPage = lazy(() => import('../pages/ErrorHandling'));
+const LocalizationPage = lazy(() => import('../pages/Localization'));
 
 const Routes:React.FC = () => {
     return (
