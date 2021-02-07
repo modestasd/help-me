@@ -1,20 +1,23 @@
-import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React,{ lazy, Suspense } from 'react';
+import { Redirect, Route, Switch } from 'react-router-dom';
 
 import ROUTES from './constants';
 
-import Home from 'src/pages/Home';
-import Welcome from 'src/pages/Welcome';
-import NotFound from 'src/pages/NotFound';
+const Home = lazy(() => import('src/pages/Home'));
+const Welcome = lazy(() => import('src/pages/Welcome'));
+const NotFound = lazy(() => import('src/pages/NotFound'));
 
 const Routes:React.FC = () => {
     return (
-            <Switch>
-                <Route exact path={ROUTES.HOME} component={Home}/> 
-                <Route path={ROUTES.WELCOME} component={Welcome}/> 
-                <Route path={ROUTES.NOT_FOUND} component={NotFound}/> 
-                <Route component={NotFound}/> 
-            </Switch>
+            <Suspense fallback={<>Loading</>}>
+                <Switch>
+                    <Route exact path={ROUTES.HOME} component={Home}/> 
+                    <Route path={ROUTES.WELCOME} component={Welcome}/> 
+                    <Route path={ROUTES.NOT_FOUND} component={NotFound}/> 
+                    <Redirect from={ROUTES.HOME} to={ROUTES.WELCOME} />
+                    <Route component={NotFound}/> 
+                </Switch>
+            </Suspense>
     );
 };
 
