@@ -4,11 +4,12 @@ import { increment } from './store/modules/setupExample/actions';
 
 const App:React.FC = () => {
     const dispatch = useDispatch();
-    const state = useSelector(state => state);
-    console.log(state)
+    const counter = useSelector(({setupExample}) => setupExample.counter);
+
     return (
         <>
            <button onClick={()=>dispatch(increment())}>button</button>
+           <p>{counter}</p>
         </>
     )
 };

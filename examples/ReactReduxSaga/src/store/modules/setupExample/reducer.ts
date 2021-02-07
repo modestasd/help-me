@@ -1,50 +1,30 @@
   
-import { combineActions, handleActions } from 'redux-actions';
-import { actionsType, decrement, increment } from './actions';
+import { handleActions } from 'redux-actions';
+
 import * as SETUP_EXAMPLE_TYPES from './constants';
 
 export interface SetupExampleState {
     counter: number;
 };
  
+const increment = (state: SetupExampleState): SetupExampleState => ({
+  ...state,
+  counter: state.counter +1
+});
+
+const decrement = (state: SetupExampleState): SetupExampleState => ({
+  ...state,
+  counter: state.counter -1
+});
+
 const defaultState: SetupExampleState = {
     counter: 0
 };
-  
-
-// const setupExampleReducer = (
-//   state: SetupExampleState = defaultState,
-//   action: actionsType
-// ):SetupExampleState => {
-//     console.log(state)
-//   switch (action.name) {
-//     case SETUP_EXAMPLE_TYPES.INCREMENT:
-//       return {
-//         ...state,  
-//         counter: state.counter++
-//     }
-//     case SETUP_EXAMPLE_TYPES.DECREMENT:
-//         return {
-//         ...state,  
-//         counter: state.counter--
-//     }
-//     // case 'heloo':
-//     //         return state.counter--;
-//     default: 
-//         return state
-//   }
-// }
 
 const setupExampleReducer = handleActions(
     {
-      [SETUP_EXAMPLE_TYPES.INCREMENT]: (state) => ({
-        ...state,
-        counter: state.counter +1
-      }),
-      [SETUP_EXAMPLE_TYPES.DECREMENT]: (state) => ({
-        ...state,
-        counter: state.counter -1
-      }),
+      [SETUP_EXAMPLE_TYPES.INCREMENT]: (state) => increment(state),
+      [SETUP_EXAMPLE_TYPES.DECREMENT]: (state) => decrement(state),
     },
     defaultState
   );

@@ -1,4 +1,4 @@
-const NAMESPACE = 'setupExample';
+const NAMESPACE = 'SETUP_EXAMPLE';
 
 export const INCREMENT = `${NAMESPACE}/INCREMENT`;
 export const DECREMENT = `${NAMESPACE}/DECREMENT`;
