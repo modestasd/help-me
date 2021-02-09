@@ -1,7 +1,9 @@
 import {default as path, resolve} from 'path';
+const webpack = require('webpack');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-console.log(__dirname)
+const dotenv = require('dotenv').config({path: __dirname + '/env/.env'});
+
 module.exports = {
   entry: './src/index.tsx',
   
@@ -19,7 +21,10 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: resolve(__dirname, 'public/index.html'),
         filename: 'index.html',
-    })  
+    }),
+    new webpack.DefinePlugin({
+      "process.env": JSON.stringify(dotenv.parsed)
+  }),
   ],
   resolve: {
     extensions: [ '.tsx', '.ts', '.js' ],

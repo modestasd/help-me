@@ -1,9 +1,9 @@
 import { all } from 'redux-saga/effects';
-import setupExamplesaga from './modules/setupExample/sagas';
+import postsSagas from './modules/posts/sagas';
 
 export default function* rootSaga() {
     yield all([
-        setupExamplesaga()
+        ...postsSagas,
     ]);
 }
   
