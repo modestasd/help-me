@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
-import setupExampleReducer,{SetupExampleState} from './modules/setupExample/reducer';
+import postsReducer,{PostsState} from './modules/posts/reducer';
 
 export interface RootState {
-    readonly setupExample: SetupExampleState
+    readonly posts: PostsState
 };
 
 const rootReducer = combineReducers<RootState>({
-    setupExample: setupExampleReducer,
+    posts: postsReducer,
 });
 
 declare module 'react-redux' {

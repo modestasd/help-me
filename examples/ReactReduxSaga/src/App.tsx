@@ -1,16 +1,16 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import {increment } from './store/modules/setupExample/actions';
-import * as posts from './store/modules/posts/actions';
+import * as postsActions from './store/modules/posts/actions';
+import { selectPosts } from './store/modules/posts/selectors';
 
 const App:React.FC = () => {
     const dispatch = useDispatch();
-    const counter = useSelector(({setupExample}) => setupExample.counter);
+    const posts = useSelector(selectPosts);
 
     return (
         <>
-           <button onClick={()=>dispatch(posts.getPosts())}>button</button>
-           <p>{counter}</p>
+           <button onClick={()=>dispatch(postsActions.getPosts())}>button</button>
+           {posts.map(i=> <p>{i.title}</p>)}
         </>
     )
 };
