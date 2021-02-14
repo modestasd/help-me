@@ -34,8 +34,8 @@ export const PulsingBox = styled.div<PulsingBoxProps>`
         animation: ${pulse(pulseColor)} 2s infinite;
     `};
     margin: 10px;
-	border-radius: 50%;
-	height: 50px;
+    border-radius: 50%;
+    height: 50px;
     width: 50px;
 `;
 
