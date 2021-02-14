@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {ThemeProvider} from 'styled-components';
+import Responsive from './components/Responsive';
 
 import TextBox from './components/TextBox';
 import Toggler from './components/Toggler';
@@ -15,7 +16,8 @@ const App = () => {
                 onClick={()=>setTheme(prevTheme=>prevTheme === 'light'? 'dark' : 'light')} 
                 isEnabled={theme==='dark'}
             />
-            <TextBox />
+            {/* <TextBox /> */}
+            <Responsive />
         </ThemeProvider>
     )
 }

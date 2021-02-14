@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
 import {H1} from 'src/styles/global';
-import {deviceType, responsive} from 'src/styles/global/helpers';
 import {pulse,spin,move,MoveDirection} from 'src/styles/animations';
 import {centeredView} from 'src/styles/global/positioning';
 
@@ -17,10 +16,6 @@ interface MovingBoxProps {
 
 export const StyledH1 = styled(H1)`
     font-size: 1rem;
-    
-    ${responsive(deviceType.TABLET_HORIZ, `
-        background-color: green;
-    `)}
 `;
 
 export const CenteredWrapper = styled.div`
