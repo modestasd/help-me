@@ -15,7 +15,7 @@ npm i && npm start
 | [Localization](examples/Localization)| not-started|
 | [Optimization](examples/Optimization)| in-progress|
 | [React-redux-saga](examples/ReactReduxSaga)| in-progress|
-| [React-router-dom](examples/ReactRouterDom)React-router-dom| in-progress|
+| [React-router-dom](examples/ReactRouterDom)| in-progress|
 | [Styled-Components](examples/StyledComponents)| in-progress|
 | [Styling](examples/Styling)| in-progress|
 | [Testing](examples/Testing)| in-progress|
