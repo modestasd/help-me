@@ -19,5 +19,5 @@ npm i && npm start
 | [Styled-Components](examples/StyledComponents)| in-progress|
 | [Styling](examples/Styling)| in-progress|
 | [Testing](examples/Testing)| in-progress|
-| [Webpack](examples/Webpack)Webpack| in-progress|
+| [Webpack](examples/Webpack)| in-progress|
 
