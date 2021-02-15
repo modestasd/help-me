@@ -10,7 +10,7 @@ npm i && npm start
 | :---: | :---: | 
 | [Boilerplate](examples/Boilerplate)| not-started|
 | [Errors handling](examples/ErrorHandling)| not-started|
-| [Hooks](examples/Hooks)| not-started|
+| [Hooks](examples/Hooks)| in-progress|
 | [Linter/Prettier](examples/LinterPrettier)| not-started|
 | [Localization](examples/Localization)| not-started|
 | [Optimization](examples/Optimization)| in-progress|
@@ -18,6 +18,6 @@ npm i && npm start
 | [React-router-dom](examples/ReactRouterDom)| in-progress|
 | [Styled-Components](examples/StyledComponents)| in-progress|
 | [Styling](examples/Styling)| in-progress|
-| [Testing](examples/Testing)| in-progress|
+| [Testing](examples/Testing)| not-started|
 | [Webpack](examples/Webpack)| in-progress|
 
