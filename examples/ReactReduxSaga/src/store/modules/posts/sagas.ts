@@ -9,7 +9,7 @@ import IPost = PostsTypes.Post;
 export function* getPostsWorker() {
     yield put(actions.getPostsRequest());
     const response: IApiResponse<IPost[]> = yield call(postsApi.getPosts);
-    console.log(response)
+
     if (!response.error) {
         yield put(actions.getPostsSuccess(response.data));
     } else {
