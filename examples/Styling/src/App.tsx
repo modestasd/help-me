@@ -10,14 +10,14 @@ import {GlobalStyles,darkTheme,lightTheme} from './styles';
 const App = () => {
     const [theme, setTheme] = useState<'dark'|'light'>('light');
     return (
-        <ThemeProvider theme={theme==='light' ? lightTheme : darkTheme}>
+        <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
             <GlobalStyles/>
             <Toggler 
                 onClick={()=>setTheme(prevTheme=>prevTheme === 'light'? 'dark' : 'light')} 
-                isEnabled={theme==='dark'}
+                isEnabled={theme === 'dark'}
             />
-            {/* <TextBox /> */}
-            <Responsive />
+            <TextBox />
+            {/* <Responsive /> */}
         </ThemeProvider>
     )
 }
