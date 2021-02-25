@@ -4,7 +4,7 @@ export interface LoadingState {
   [requestName: string]: boolean;
 };
 
-const defaultState: LoadingState = {};
+export const defaultState: LoadingState = {};
 
 const loadingReducer = (state: LoadingState = defaultState, action: AnyAction): LoadingState => {
   const { type } = action;

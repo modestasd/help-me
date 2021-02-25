@@ -1,6 +1,6 @@
 import { DefaultRootState } from "react-redux";
 
-export type CreateLoadingSelector = (selectors: string[]) => (state: DefaultRootState) => void;
+export type CreateLoadingSelector = (selectors: string[]) => (state: DefaultRootState) => boolean;
 
 export const createLoadingSelector: CreateLoadingSelector = actions => state => {
   const parsedActions = actions.map((action) => {
