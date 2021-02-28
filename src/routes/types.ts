@@ -13,4 +13,4 @@ export const ROUTES = {
     TESTING: '/testing',
     STYLING: '/styling',
     ABOUTME: '/about'
-} as const;
+} as const; 
