@@ -1,21 +1,21 @@
 import React from 'react';
 import { 
-    LazyInitialStateContainer, 
-    ReactLazyContainer, 
-    ReactMemoContainer, 
-    UseCallbackContainer, 
-    UseMemoContainer 
-} from 'src/containers/optimization';
+    LazyInitialStateStory,
+    ReactLazyStory,
+    ReactMemoStory,
+    UseCallbackStory,
+    UseMemoStory
+} from './components';
 
 const Optimization = () => {
     return (
         <div>
             Optimization
-            <LazyInitialStateContainer />
-            <ReactMemoContainer />
-            <UseCallbackContainer />
-            <UseMemoContainer />
-            <ReactLazyContainer />
+            <LazyInitialStateStory />
+            <ReactLazyStory />
+            <ReactMemoStory />
+            <UseCallbackStory />
+            <UseMemoStory />
         </div>
     )
 }

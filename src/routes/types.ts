@@ -1,6 +1,5 @@
 export const ROUTES = {
     HOME: '/',
-    WELCOME: '/welcome',
     WEBPACK: '/webpack',
     LINTERPRETTIER: '/linter-prettier',
     REACTROUTER: '/react-router',
@@ -14,4 +13,4 @@ export const ROUTES = {
     TESTING: '/testing',
     STYLING: '/styling',
     ABOUTME: '/about'
-};
+} as const; 

@@ -1,14 +1,9 @@
 import React from 'react'
-import { LocalizationSetupContainer } from 'src/containers/localization'
 
-interface Props {
-    
-}
-
-const Localization = (props: Props) => {
+const Localization = () => {
     return (
         <div>
-            <LocalizationSetupContainer />
+            ok
         </div>
     )
 }

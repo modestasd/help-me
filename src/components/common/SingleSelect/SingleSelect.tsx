@@ -1,7 +1,7 @@
 import React, { createContext, useContext } from 'react'
-import { useSingleSelect } from './actions';
+import {useSingleSelect} from './actions';
 import {ISingleSelectContext} from './types';
-import { ItemWrapper, Wrapper } from './SingleSelect.styles'
+import {ItemWrapper, Wrapper} from './styles'
 
 interface ISingleSelectComposition {
     Item: React.FC<IItemProps>;

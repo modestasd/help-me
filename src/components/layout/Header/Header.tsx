@@ -15,16 +15,13 @@ const Header:React.FC<IProps> = (props) => {
     const changeLanguageHandler = useCallback((language: string)=> {
         i18n.changeLanguage(language);
     }, []);
-    // functions.add(changeLanguageHandler);
-    // console.log(functions.size)
     return (
         <Wrapper>
             {/* PERKELT I CONSTANTAS PAVADINIMUS */}
             <NavItem to={ROUTES.HOME}>{t('header.home_route', 'home')}</NavItem>
-            <NavItem to={ROUTES.WELCOME}>welcome</NavItem>
-            <NavItem to={ROUTES.OTIMIZATION}>OTIMIZATION</NavItem>
-            <NavItem to={ROUTES.LOCALIZATION}>LOCALIZATION</NavItem>
-            <NavItem to={ROUTES.EREORHANDLING}>ERROR HANDLING</NavItem>
+            <NavItem to={ROUTES.OTIMIZATION}>{t('header.optimization_route', 'optimization')}</NavItem>
+            <NavItem to={ROUTES.LOCALIZATION}>{t('header.localization_route', 'localization')}</NavItem>
+            <NavItem to={ROUTES.EREORHANDLING}>{t('header.errorHandling_route', 'Eroor handling')}</NavItem>
             <NavItem to={ROUTES.ABOUTME}>{t('header.about_route', 'about')}</NavItem>
             <SingleSelect defaultSelected={Locales.English}>
                 {Object.values(Locales).map(locale => 

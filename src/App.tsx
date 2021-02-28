@@ -1,21 +1,20 @@
-import React from 'react'
-import { ThemeProvider } from 'styled-components';
+import React from 'react';
+import {ThemeProvider} from 'styled-components';
 
-import { HeaderContainer } from './containers';
 import Routes from './routes/Routes';
+import {GlobalStyles,darkTheme} from './styles';
+import {Header} from './components/layout';
+import {ErrorBoundary} from './components/common';
 
-import { GlobalStyle } from './styles/globalStyles';
-import { darkTheme } from './styles/theme';
 import {Wrapper} from './App.styles';
-import ErrorBoundary from './components/common/ErrorBoundary/ErrorBoundary';
 
 const App:React.FC = () => {
     return (
         <ErrorBoundary>
             <ThemeProvider theme={darkTheme}>
-                <GlobalStyle/>
+                <GlobalStyles/>
                 <Wrapper>
-                    <HeaderContainer />
+                    <Header />
                     <Routes />
                 </Wrapper>
             </ThemeProvider>

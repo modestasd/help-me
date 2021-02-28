@@ -1,5 +1,5 @@
 import React from 'react'
-import { ErrorBoundariesContainer } from 'src/containers/errorHandling'
+import ErrorBoundariesStory from './components/ErrorBoundaries'
 
 interface Props {
     
@@ -8,7 +8,7 @@ interface Props {
 const ErrorHandling = (props: Props) => {
     return (
         <div>
-            <ErrorBoundariesContainer />
+            <ErrorBoundariesStory/>
         </div>
     )
 }

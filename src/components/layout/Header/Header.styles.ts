@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom'; 
-import { centered } from 'src/styles/mixins/layout.styles';
+import {centeredView} from 'src/styles/global/positioning';
 
 export const Wrapper = styled.header`
-    ${centered};
+    ${centeredView};
     flex-direction: column;
     height: 100vh;
 `;
