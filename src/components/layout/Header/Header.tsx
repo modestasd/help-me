@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import {SingleSelect} from 'src/components/common';
 import { ROUTES } from 'src/routes/types';
 import { Locales } from './constants';
-import { NavItem, Wrapper } from './Header.styles';
+import { NavItem, Wrapper } from './styles';
 
 interface IProps {
     
