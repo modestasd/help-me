@@ -1,0 +1,9 @@
+{
+  "header": {
+    "home_route": "pagrindinis",
+    "about_route": "apie"
+  },
+  "welcome": {
+    "welcome_text": "Sveiki"
+  }
+}
